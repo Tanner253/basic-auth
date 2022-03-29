@@ -33,6 +33,7 @@ async function basic(req, res, next) {
 // echo '{"username":"john","password":"foo"}' | http post :3000/signup
 // http post :3000/signup username=john password=foo
 authRouter.post("/signup", async (req, res) => {
+	console.log("poop");
     try {
         let {username, password} = req.body;
 				let encryptedPassword = await bcrypt.hash(password, 10);

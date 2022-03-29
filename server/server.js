@@ -6,6 +6,7 @@ const app = express();
 // Process FORM intput and put the data on req.body
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
 //routers go here
 app.use(authRouter);
 
