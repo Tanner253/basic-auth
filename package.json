@@ -1,11 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "Basic Authentication implemetation",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "watch": "nodemon app.js",
+    "start": "node index.js",
+    "watch": "nodemon index.js",
     "init:config": "sequelize init:config",
     "db:create": "sequelize db:create",
     "test-watch": "NODE_ENV=test jest --watchAll",
@@ -25,8 +25,17 @@
     "express": "^4.17.1",
     "jest": "^26.6.3",
     "pg": "^8.6.0",
-    "sequelize": "^6.6.2",
+    "sequelize": "^6.17.0",
     "sequelize-cli": "^6.2.0",
-    "sqlite3": "^5.0.2"
-  }
+    "sqlite3": "^5.0.2",
+    "supertest": "^6.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanner253/basic-auth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tanner253/basic-auth/issues"
+  },
+  "homepage": "https://github.com/Tanner253/basic-auth#readme"
 }
