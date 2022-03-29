@@ -10,12 +10,12 @@ console.log(DATABASE_URL, process.env.NODE_ENV)
 
 //disable if need to seed locally!
 const sequelize = new Sequelize(DATABASE_URL, {
-  dialectOptions:{
-    ssl:{
-      require:true,
-      rejectUnauthorized: false,
-    },
-  },
+  // dialectOptions:{
+  //   ssl:{
+  //     require:true,
+  //     rejectUnauthorized: false,
+  //   },
+  // },
 });
 
 const UserModel = userSchema(sequelize, DataTypes);
