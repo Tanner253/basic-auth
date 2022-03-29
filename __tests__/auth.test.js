@@ -24,7 +24,7 @@ describe("testing auth routes", () => {
       let authString = 'john:foo';
       let encodedString = base64.encode(authString);
       let response = await request.post('/signin').set('Authorization', `Basic ${encodedString}`);
-  
+      console.log("encoded", encodedString);
       expect(response.status).toEqual(200);
     });
 });
